@@ -1,0 +1,38 @@
+.glass-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.8rem 1.8rem;
+    gap: 20px;
+    height: 100%;
+    background: linear-gradient(
+      147.95deg,
+      rgba(255, 255, 255, 0.05) 19.48%,
+      rgba(255, 255, 255, 0.02) 114.21%
+    );
+    border-radius: 20px;
+    transition: all ease 0.33s;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-1.2rem);
+    background: rgba(255, 255, 255, 0.1);
+    cursor: crosshair;
+  }
+  
+  .glass-box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass-box svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 2.4rem;
+  }
+  
+  .glass-box svg path {
+      transition: all ease 0.85s;
+  }
+  

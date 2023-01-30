@@ -1,0 +1,168 @@
+:root {
+  --glass-width: 353.38px;
+  --glass-height: var(--glass-width);
+}
+
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+  /* overflow: hidden; */
+  /* overflow: overlay; */
+}
+
+.hero-grid {
+  /* display: grid; */
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-areas: a b; */
+  /* gap: 9.6rem; */
+  align-items: center;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.grid-item {
+  flex: 1;
+}
+
+.hero-text-box {
+  display: inline-block;
+  align-items: flex-start;
+  z-index: 0;
+}
+
+.hero-text-box h1 {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  /* letter-spacing: -0.5px; */
+}
+.hero-text-box p:nth-child(1) {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.hero-text-box p:nth-child(3) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.4;
+  /* color: #ffffff; */
+  opacity: 0.7;
+  margin-bottom: 1.4rem;
+  z-index: 0;
+}
+
+.hero-text-box .caption p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-text-box button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.8rem;
+  padding: 18px 26px;
+  gap: 10px;
+  width: 160px;
+  height: 55px;
+  background: var(--btn-color);
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  /* font-size: 0.8rem; */
+  text-transform: inherit;
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+  transition: all ease-in-out 0.45s;
+}
+
+.hero-text-box button:hover {
+  background: #362266;
+  transform: translateY(-0.6rem);
+}
+
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -24rem;
+}
+
+/* Tilted Glass Rectangle  */
+
+.img-box {
+  display: block;
+  box-sizing: border-box;
+  width: var(--glass-width);
+  height: var(--glass-height);
+  background: rgba(217, 217, 217, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  transform: rotate(20.44deg);
+  /* transition-property: translateY(-1rem); */
+  /* position: absolute; */
+}
+
+/* .img-box:hover {
+} */
+/* translate: 50% -40%; */ 
+.hero-img {
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  /* margin-bottom: -10rem; */
+}
+
+@media (max-width: 84em) {
+  .hero-grid {
+    max-width: 120rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    /* grid-auto-flow: column; */
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img-box {
+    margin-bottom: -10rem;
+    /* grid-column-end: 2; */
+  }
+}
+
+@media (max-width: 34em) {
+  .img-box {
+    width: 300px;
+    height: 300px;
+    /* margin-bottom: 6.4rem; */
+  }
+
+  .hero-img-box {
+    margin-bottom: 2.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .grid-item {
+    grid-column: 2 / 1;
+  } */
+  .hero-grid {
+    flex-wrap: wrap-reverse;
+    padding: 0 ;
+  }
+}

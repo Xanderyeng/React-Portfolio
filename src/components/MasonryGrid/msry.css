@@ -1,0 +1,16 @@
+.msry-grid {
+    width: 100%;
+  }
+  
+  .msry-grid .grid-item {
+    width:  calc(33.33% - 3.2rem);
+    margin-bottom: 3.2rem;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 34em){
+   .msry-grid .grid-item{
+        width: 80%;
+    }
+  }
+  

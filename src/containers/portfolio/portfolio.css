@@ -1,0 +1,26 @@
+.portfolio-section {
+  /* padding: 9.6rem 0; */
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-section .container {
+  max-width: 120rem;
+  padding: 0 3.2rem 4.8rem;
+  margin: 0 auto;
+  /* background:peachpuff; */
+  display: block;
+}
+
+.portfolio-tabs {
+  /* PADDING TOP AND BOTTOM ONLY BETWEEN TAB CONTAINER & SECTION CONTAINER */
+  padding: 2.4rem 0 2.4rem 0;
+}
+
+.portfolio-msry {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+}
